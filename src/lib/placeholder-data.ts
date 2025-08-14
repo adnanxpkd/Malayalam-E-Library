@@ -350,5 +350,37 @@ export const books: Book[] = [
     is_public_domain: true,
     status: 'PUBLISHED',
     downloads: 480
+  },
+  {
+    id: 'thottiyude-makan',
+    title: 'Thottiyude Makan',
+    authors: ['Thakazhi Sivasankara Pillai'],
+    year: 1947,
+    description: 'A groundbreaking novel that tells the story of three generations of a scavenger family in Alleppey, highlighting the caste-based discrimination and social injustices they face. It was one of the first Malayalam novels to portray the lives of the so-called "lower-caste" communities.',
+    categories: ['Novels', 'History'],
+    formats: {
+      pdf: 'https://archive.org/details/thottiyude-makan-thakazhi-sivasankara-pillai/mode/2up'
+    },
+    cover_url: 'https://placehold.co/400x600.png',
+    source: 'Internet Archive',
+    is_public_domain: true,
+    status: 'PUBLISHED',
+    downloads: 380
+  },
+  {
+    id: 'gnanambika',
+    title: 'Gnanambika',
+    authors: ['Kerala Varma Valiya Koi Thampuran'],
+    year: 1892,
+    description: 'A historical novel written by a prominent member of the Travancore royal family. It is noted for its classical language and depiction of courtly life.',
+    categories: ['Novels', 'History'],
+    formats: {
+      pdf: 'https://archive.org/details/dli.mal.2016.1436'
+    },
+    cover_url: 'https://placehold.co/400x600.png',
+    source: 'Internet Archive',
+    is_public_domain: true,
+    status: 'PUBLISHED',
+    downloads: 120
   }
 ];
