@@ -1,1 +1,5 @@
-// Flows will be imported for their side effects in this file.
+import { config } from 'dotenv';
+config();
+
+import '@/ai/flows/auto-fetch-book-metadata.ts';
+import '@/ai/flows/weekly-fetch-public-domain-books.ts';
