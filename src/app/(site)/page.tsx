@@ -12,10 +12,10 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col">
-      <section className="py-20 md:py-32 bg-secondary/50">
+      <section className="py-20 md:py-32 bg-background">
         <div className="container text-center">
           <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight text-primary">
-            A Treasure of Malayalam Literature
+            Explore Free Malayalam Books & Audiobooks
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
             Explore a rich collection of copyright-free Malayalam eBooks and audiobooks. All works are legally available in the public domain.
@@ -28,13 +28,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-secondary/10">
         <div className="container">
           <h2 className="text-3xl font-headline font-bold mb-8 text-center">Browse by Category</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
             {categories.map((category) => (
               <Link key={category.slug} href={`/category/${category.slug}`} className="block group">
-                <Card className="text-center hover:bg-accent hover:text-accent-foreground transition-colors duration-200 h-full">
+                <Card className="text-center hover:bg-accent hover:text-accent-foreground transition-colors duration-200 h-full hover:-translate-y-1 shadow hover:shadow-md">
                   <CardContent className="p-6 flex items-center justify-center">
                     <h3 className="font-semibold">{category.name}</h3>
                   </CardContent>
@@ -45,7 +45,7 @@ export default function HomePage() {
         </div>
       </section>
       
-      <section className="py-16 bg-secondary/50">
+      <section className="py-16 bg-background">
         <div className="container">
           <h2 className="text-3xl font-headline font-bold mb-8">Latest Additions</h2>
           <Carousel opts={{ align: "start", loop: true }}>
@@ -62,7 +62,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-secondary/10">
         <div className="container">
           <h2 className="text-3xl font-headline font-bold mb-8">Most Downloaded</h2>
            <Carousel opts={{ align: "start", loop: true }}>

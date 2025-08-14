@@ -11,7 +11,7 @@ interface BookCardProps {
 export default function BookCard({ book }: BookCardProps) {
   return (
     <Link href={`/book/${book.id}`} className="block group">
-      <Card className="h-full flex flex-col transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 border-2 border-transparent hover:border-primary/50">
+      <Card className="h-full flex flex-col transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1.5 border bg-card">
         <CardHeader className="p-0">
           <div className="aspect-[2/3] relative w-full overflow-hidden rounded-t-lg">
             <Image
@@ -30,7 +30,7 @@ export default function BookCard({ book }: BookCardProps) {
           <p className="text-sm text-muted-foreground mb-2">{book.authors.join(', ')}</p>
           <div className="mt-auto pt-2">
             {book.categories.slice(0, 2).map((category) => (
-              <Badge key={category} variant="secondary" className="mr-1 mb-1">{category}</Badge>
+              <Badge key={category} variant="secondary" className="mr-1 mb-1 bg-secondary/20 text-secondary-foreground/80">{category}</Badge>
             ))}
           </div>
         </CardContent>
