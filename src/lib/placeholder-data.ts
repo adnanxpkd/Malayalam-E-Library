@@ -304,5 +304,51 @@ export const books: Book[] = [
     is_public_domain: true,
     status: 'PENDING',
     downloads: 150,
+  },
+  {
+    id: 'dharmaraja',
+    title: 'Dharmaraja',
+    authors: ['C. V. Raman Pillai'],
+    year: 1913,
+    description: 'A historical novel by C. V. Raman Pillai, Dharmaraja is a sequel to his 1891 novel Marthandavarma. It continues the story of the Travancore kingdom, focusing on the reign of Karthika Thirunal Rama Varma.',
+    categories: ['Novels', 'History'],
+    formats: {
+      pdf: 'https://archive.org/details/dharmmarajacv-1913/page/n2/mode/2up'
+    },
+    cover_url: 'https://placehold.co/400x600.png',
+    source: 'Internet Archive',
+    is_public_domain: true,
+    status: 'PUBLISHED',
+    downloads: 210
+  },
+  {
+    id: 'kundalatha',
+    title: 'Kundalatha',
+    authors: ['Appu Nedungadi'],
+    year: 1887,
+    description: 'Considered by many to be the first novel written in Malayalam, Kundalatha is a historical romance set in ancient India. The story is known for its prose and imaginative plot, though it is not set in Kerala.',
+    categories: ['Novels', 'History'],
+    formats: {
+      epub: 'https://www.gutenberg.org/ebooks/66904'
+    },
+    cover_url: 'https://placehold.co/400x600.png',
+    source: 'Project Gutenberg',
+    is_public_domain: true,
+    status: 'PUBLISHED',
+    downloads: 180
+  },
+  {
+    id: 'vishakanyaka',
+    title: 'Vishakanyaka',
+    authors: ['S. K. Pottekkatt'],
+    year: 1948,
+    description: 'The novel tells the story of Christian migrant labourers who move to the Malabar region of Kerala to start a new life. It vividly portrays their struggles, dreams, and the clash between man and nature.',
+    categories: ['Novels', 'History'],
+    formats: {},
+    cover_url: 'https://placehold.co/400x600.png',
+    source: 'Public Domain',
+    is_public_domain: true,
+    status: 'PUBLISHED',
+    downloads: 480
   }
 ];
