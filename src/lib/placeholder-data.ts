@@ -1,3 +1,4 @@
+
 import type { Book, Category } from './types';
 
 export const categories: Category[] = [
@@ -240,5 +241,68 @@ export const books: Book[] = [
     is_public_domain: true,
     status: 'PUBLISHED',
     downloads: 550,
+  },
+  {
+    id: 'marthandavarma',
+    title: 'Marthandavarma',
+    authors: ['C. V. Raman Pillai'],
+    year: 1891,
+    description: 'A historical romance novel that narrates the story of Anizham Thirunal Marthanda Varma, the founder of the Travancore kingdom in the 18th century. It is a tale of chivalry, conspiracy, and patriotism.',
+    categories: ['Novels', 'History'],
+    formats: {
+      pdf: 'https://archive.org/details/marthandavarma00ramapillai',
+      epub: 'https://www.gutenberg.org/ebooks/67781',
+    },
+    cover_url: 'https://placehold.co/400x600.png',
+    source: 'Project Gutenberg / Internet Archive',
+    is_public_domain: true,
+    status: 'PUBLISHED',
+    downloads: 430,
+  },
+  {
+    id: 'ente-uppuppakkoranendarnnu',
+    title: 'Ente Uppuppakkoranendarnnu',
+    authors: ['Vaikom Muhammad Basheer'],
+    year: 1951,
+    description: 'A story that criticizes the prejudices and insular attitudes of a bygone era through the eyes of Kunjupathumma and her daughter. The title, which translates to "My Grandfather Had an Elephant," satirizes the empty pride of feudal families.',
+    categories: ['Novels', 'Children\'s Books'],
+    formats: {
+      pdf: '/books/ente-uppuppakkoranendarnnu.pdf',
+    },
+    cover_url: 'https://placehold.co/400x600.png',
+    source: 'Public Domain',
+    is_public_domain: true,
+    status: 'PUBLISHED',
+    downloads: 1150,
+  },
+  {
+    id: 'aranyakam',
+    title: 'Aranyakam',
+    authors: ['Bibhutibhushan Bandyopadhyay'],
+    year: 1939,
+    description: 'Though originally in Bengali, its Malayalam translation is widely read. A classic novel that depicts the life of Satyacharan, who takes up a job as a manager of a huge forest estate in Bihar and his deep connection with nature.',
+    categories: ['Novels', 'Essays'],
+    formats: {
+      epub: '/books/aranyakam.epub'
+    },
+    cover_url: 'https://placehold.co/400x600.png',
+    source: 'Public Domain',
+    is_public_domain: true,
+    status: 'PUBLISHED',
+    downloads: 320,
+  },
+  {
+    id: 'karutha-thambratti',
+    title: 'Karutha Thambratti',
+    authors: ['C. V. Raman Pillai'],
+    year: 1913,
+    description: 'This is the second historical novel by C.V. Raman Pillai, known for its intricate plot and character development within the context of Travancore\'s history.',
+    categories: ['Novels', 'History'],
+    formats: {},
+    cover_url: 'https://placehold.co/400x600.png',
+    source: 'Public Domain',
+    is_public_domain: true,
+    status: 'PENDING',
+    downloads: 150,
   }
 ];
